@@ -14,17 +14,37 @@
 }
 
 body {
+    --bg-color: #f0fff9;
+    --p-bg-color: #d1e7ff;
+    --text-color: #000000;
+
     direction: rtl;
-    background-color: #f0fff9;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+body.dark {
+    --bg-color: #1e1e1e;
+    --p-bg-color: #131B47;
+    --text-color: #e0e0e0;
 }
 
 p {
-    font-size: 2rem;
+    font-size: 2.7rem;
     margin: 0.7rem;
     padding: 0.6rem;
 }
 
 p:nth-child(even) {
-    background-color: #d1e7ff;
+    background-color: var(--p-bg-color);
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--text-color);
+    border: 0.05rem solid var(--text-color);
 }
 
