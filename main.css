@@ -40,6 +40,11 @@ p:nth-child(even) {
 }
 
 button {
+    width: 20vw;
+    min-width: 6rem;
+    max-width: 8rem;
+    height: 20vw / 4;
+    min-height: 3rem;
     padding: 0.5rem 1rem;
     font-size: 1rem;
     cursor: pointer;
