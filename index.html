@@ -5,7 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
 <body class="dark">
-    <button id="theme-toggle" onclick="toggleDarkMode()">☀️</button>
+    <div class="controls">
+        <button id="theme-toggle" onclick="toggleDarkMode()">☀️</button>
+
+        <label for="text-size">🗚</label>
+        <input type="range" id="text-size" min="0.5" max="2" step="0.2" value="1" oninput="adjustTextSize(this.value)">
+    </div>
     <p>
         لَوْ أَنزَلْنَا هَـٰذَا الْقُرْآنَ عَلَىٰ جَبَلٍ لَّرَأَيْتَهُ خَاشِعًا مُّتَصَدِّعًا مِّنْ خَشْيَةِ اللَّـهِ ۚ وَتِلْكَ الْأَمْثَالُ نَضْرِبُهَا لِلنَّاسِ لَعَلَّهُمْ يَتَفَكَّرُونَ ﴿۲۱﴾
     </p>
